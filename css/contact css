@@ -1,51 +1,11 @@
-/* --- Styles pour la Page Contact --- */
-
-/* Utiliser Flexbox pour le formulaire */
-.formulaire-contact form {
+form {
     display: flex;
-    flex-wrap: wrap; /* Permet aux colonnes de passer l'une sous l'autre sur petit écran */
-    gap: 20px;       /* Espace entre les colonnes */
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
 }
 
-.form-colonne-gauche {
-    flex: 1; /* Prend 1 part d'espace */
-    min-width: 250px; /* Largeur minimale avant de passer à la ligne */
-}
-
-.form-colonne-droite {
-    flex: 2; /* Prend 2 parts d'espace (plus large) */
-    min-width: 300px;
-    display: flex;
-    flex-direction: column; /* Aligne le label et le textarea verticalement */
-}
-
-.form-colonne-droite textarea {
-    flex-grow: 1; /* Fait que le textarea prend toute la hauteur disponible */
-}
-
-.form-bouton {
-    width: 100%; /* Le bouton prend toute la largeur */
-    margin-top: 10px;
-}
-
-/* Utiliser Flexbox pour les renseignements */
-.renseignements {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.info-colonne-gauche,
-.info-colonne-droite {
-    flex: 1; /* Les deux colonnes font la même taille */
-    min-width: 300px;
-}
-
-/* S'assure que les images ne débordent pas de leur conteneur */
-.info-colonne-gauche img,
-.info-colonne-droite img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ccc; /* Exemple de style */
+input {
+    padding: 10;
+    border: 1px solid black;
 }
